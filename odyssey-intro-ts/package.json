@@ -20,7 +20,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@parcel/watcher": "^2.4.0"
+    "@apollo/datasource-rest": "^6.4.1",
+    "@apollo/server": "^5.5.0",
+    "@parcel/watcher": "^2.4.0",
+    "graphql": "^16.13.2",
+    "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
