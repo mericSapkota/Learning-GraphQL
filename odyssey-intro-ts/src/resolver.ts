@@ -1,9 +1,9 @@
 import { Resolvers } from "./types";
 
-export const resolver: Resolvers = {
+export const resolvers: Resolvers = {
   Query: {
     featuredListings: (_, __, { dataSources }) => {
-      return dataSources.listingApi.getFeaturedListings();
+      return dataSources.listingAPI.getFeaturedListings();
     },
   },
 };
