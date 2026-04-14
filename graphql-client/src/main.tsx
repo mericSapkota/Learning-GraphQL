@@ -8,9 +8,11 @@ import { InMemoryCache } from "@apollo/client";
 import { HttpLink } from "@apollo/client/link/http";
 import { BrowserRouter } from "react-router-dom";
 
+//
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "/graphql",
+    // uri: "/graphql",  rick and morty api
+    uri: "http://localhost:4000/graphql", // your own graphql server
   }),
   cache: new InMemoryCache(),
 });

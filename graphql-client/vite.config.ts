@@ -6,12 +6,20 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    proxy: {
-      "/graphql": {
-        target: "https://rickandmortyapi.com",
-        changeOrigin: true,
-        secure: true,
-      },
-    },
+    //rick and morty api is used for testing purposes, you can replace it with your own graphql server
+    // proxy: {
+    //   "/graphql": {
+    //     target: "https://rickandmortyapi.com",
+    //     changeOrigin: true,
+    //     secure: true,
+    //   },
+    // },
+    // proxy: {
+    //   "/": {
+    //     target: "http://localhost:4000",
+    //     changeOrigin: true,
+    //     secure: true,
+    //   },
+    // },
   },
 });
